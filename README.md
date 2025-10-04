@@ -163,7 +163,7 @@ SistemaBancario/
 
 Cada operação é registrada assim:
 
-```json
+```
 
 {
 	"tipo":  "DEPÓSITO"  |  "SAQUE"  |  "TRANSFERÊNCIA ENVIO"  |  "TRANSFERÊNCIA RECEBIDA",
