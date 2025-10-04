@@ -34,12 +34,14 @@ A aplicação funciona via terminal e todas as operações exigem autenticação
 ```
 SistemaBancario/
 │
+├── docs/
+│ └── fluxograma.pdf # Fluxograma geral do sistema
 ├── services/
 │ ├── banco_service.py # Lógica do banco (gerenciamento de contas)
 │ └── conta_service.py # Lógica da conta bancária individual
 ├── templates/
 │ └── menu.py # Interface do usuário (menu e interações)
-├── main.py # Rodar a aplicação
+├── main.py # Arquivo principal para executar o sistema
 
 ```
 
