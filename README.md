@@ -133,8 +133,8 @@ SistemaBancario/
 -  **Métodos:**
 	
 	-  `gerar_numero_conta() -> str`: gera número de conta único (10000-99999).
-	-  `cadastrar(titular: str, senha: str) -> str`: cria nova conta e retorna o número.
-	-  `autenticar(numero_conta: str, senha: str) -> Conta | None`: valida senha e retorna o objeto `Conta`.
+	-  `cadastrar_conta(titular: str, senha: str) -> str`: cria nova conta e retorna o número.
+	-  `autenticar_conta(numero_conta: str, senha: str) -> Conta | None`: valida senha e retorna o objeto `Conta`.
 	-  `transferir(conta_origem: str, senha: str, conta_destino: str, valor: float) -> bool`: realiza transferência se saldo e autenticação forem válidos.
 
 ---
@@ -154,10 +154,11 @@ SistemaBancario/
 -  **Métodos:**
 
 	-  `__init__(numero, titular, senha)`: inicializa a conta com senha criptografada.
-	-  `autenticar(senha: str) -> bool`: valida a senha.
-	-  `registrar(tipo: str, valor: float, destino: str | None = None)`: adiciona operação ao histórico.
+	-  `autenticar_senha_conta(senha: str) -> bool`: valida a senha.
+	-  `registrar_historico(tipo: str, valor: float, destino: str | None = None)`: adiciona operação ao histórico.
 	-  `depositar(valor: float) -> bool`: adiciona saldo (somente positivo).
 	-  `sacar(valor: float) -> bool`: subtrai saldo se houver fundos suficientes.
+ 	-  `exibir_saldo() -> float`: retorna o saldo
 
 ---
 
